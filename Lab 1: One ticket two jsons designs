@@ -21,3 +21,16 @@
     }
 }
 
+{
+  "users":[
+    {"user_id": 103, "display_name": "Requestor 103", "email": "requestor103@example.test",
+      "role": "resident", "neighborhood": "central"}]
+  "tickets"[
+    {"ticket_id": 1003, "requestor_id": 103, "asignee_id": 201, "status": "solved",
+      "subject": "Low water pressure", "opened_at": "2026-02-03T12:05:00Z",   
+      "closed_at": "2026-02-03T19:40:00Z",}]
+  "ticket_events": [
+    {"event_id": 5005, "event_type": "created", "event_at": "2026-02-03T19:40:00Z"}
+    {"event_id": 5006, "event_type": "status_changed", "event_at": "2026-02-03T14:25:00Z"}
+    {"event_id": 5007, "event_type": "status_changed", "event_at": "2026-02-03T19:40:00Z"}]
+}
