@@ -1,12 +1,28 @@
 {
   "users":[
     {"user_id": 103, "display_name": "Requestor 103", "email": "requestor103@example.test",
-      "role": "resident", "neighborhood": "central"}]
+      "role": "resident", "neighborhood": "central"}
+    {"user_id": 201, "display_name": "Agent 201", "email": "agent201@example.test", "role": "agent",
+      "neightborhood": "Central"}]
   "tickets"[
     {"ticket_id": 1003, "requestor_id": 103, "asignee_id": 201, "status": "solved",
       "subject": "Low water pressure", "opened_at": "2026-02-03T12:05:00Z",   
       "closed_at": "2026-02-03T19:40:00Z",}]
   "ticket_events": [
+    {"event_id": 5005, "event_type": "created", "event_at": "2026-02-03T19:40:00Z"}
+    {"event_id": 5006, "event_type": "status_changed", "event_at": "2026-02-03T14:25:00Z"}
+    {"event_id": 5007, "event_type": "status_changed", "event_at": "2026-02-03T19:40:00Z"}]
+}
+
+{
+ "requester": {"user_id": 103, "display_name": "requestor 103", "email": "requestor103@example.test",
+    "role": "resident", "neighborhood": "central"},
+  "assignee": {"user_id": 201, "display_name": "Agent 201", "email": "agent201@example.test", "role": "agent",
+      "neighborhood": "Central"},
+  "ticket_id": 1003,
+  "subject": "Low water pressure",
+  "status": "resolved",
+  "events": [
     {"event_id": 5005, "event_type": "created", "event_at": "2026-02-03T19:40:00Z"}
     {"event_id": 5006, "event_type": "status_changed", "event_at": "2026-02-03T14:25:00Z"}
     {"event_id": 5007, "event_type": "status_changed", "event_at": "2026-02-03T19:40:00Z"}]
