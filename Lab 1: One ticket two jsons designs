@@ -34,3 +34,8 @@ updated
     {"event_id": 5007, "event_type": "status_changed", "event_at": "2026-02-03T19:40:00Z"}]
 }
 
+Tradeoff explaination:
+  When searching for the requester and events information they simply need to search the first and last sections. However
+when the display name is changed, the entire structure needs to be updated. Since each category is nested and overlapping
+information is not duplicated simply updating the display name will result to updating the users and tickets table
+
